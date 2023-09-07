@@ -6358,13 +6358,16 @@ section.gray-section .section-separator {
 }
 .menu-filters a  , .listing-filters  a{
 	padding:10px 30px;
-    color: #7d93b2;
+    color: #17183B;
 	font-size:12px;
 	font-weight:600;
 	border-right:1px solid #eee;
 }
-.menu-filters a.menu-filters-active , .listing-filters  a.gallery-filter-active {
+.menu-filters a.menu-filters-active , .listing-filters  {
 	color:#fff;
+}
+a.gallery-filter-active {
+	color:#17183B;
 }
 .menu-filters a:last-child  {
 	border-right:none;
@@ -6375,21 +6378,21 @@ section.gray-section .section-separator {
 }
 .listing-filters  a {
 	display:inline-table;
-	border:1px solid #eee;
+	/* border:1px solid #eee; */
 	border-right:none;
 	margin:0 -2px;
-	padding:15px 30px;
-	background:#f9f9f9;
+	padding:12px 22px;
+	/* background:#f9f9f9; */
 }
 .listing-filters  a:hover {
-	background:#fff;
+	/* background:#fff; */
 }
 .listing-filters  a:last-child   {
-	border-right:1px solid #eee;
-	border-radius:0 6px 6px 0;
+	/* border-right:1px solid #eee; */
+	/* border-radius:0 6px 6px 0; */
 }
 .listing-filters  a:first-child   {
-	border-radius:6px 0 0 6px ;
+	/* border-radius:6px 0 0 6px ; */
 
 }
 /*------ Grid Gallery------------------------------------------------*/
@@ -9156,7 +9159,7 @@ section.parallax-section {
 	display:block;
     border:none;
 }
-.menu-filters a, .listing-filters a   {
+.menu-filters a{
 	border-top: 1px solid #eee;
 }
 .listing-filters a:last-child {
@@ -9164,7 +9167,7 @@ section.parallax-section {
 	border-right:none;
 }
 .listing-filters {
-	border: 1px solid #eee;
+	/* border: 1px solid #eee; */
 	border-radius:6px;
 	overflow:hidden;
 }

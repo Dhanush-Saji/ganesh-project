@@ -1,24 +1,50 @@
-const slides = document.querySelectorAll('.custom-slider')
-var counter = 0
-slides.forEach((slide,index)=>{
-    slide.style.left = `${index * 100}%`
+/* Hero slider */
+const slides = document.querySelectorAll(".custom-slider");
+var counter = 0;
+let isChange = false;
+slides.forEach((slide, index) => {
+  slide.style.left = `${index * 100}%`;
+});
+const goNext = () => {
+  if (counter > 1) {
+    return;
+  }
+  counter++;
+  slideImage();
+};
+const goPrev = () => {
+  if (counter == 0) {
+    return;
+  }
+  counter--;
+  slideImage();
+};
+const slideImage = () => {
+  slides.forEach((slide) => {
+    slide.style.transform = `translateX(-${counter * 100}%)`;
+  });
+};
+function slideImageFn() {
+  setInterval(() => {
+    if (counter == 2) {
+      isChange = true;
+    } else if (counter == 0) {
+      isChange = false;
+    }
+    if (isChange) {
+      goPrev();
+    } else {
+      goNext();
+    }
+  }, 3000);
+}
+slideImageFn()
+/* Hero slider */
+
+/* Navbar handler */
+let hamburger = document.querySelector('.custom-hamburger')
+hamburger.addEventListener('click',()=>{
+    let navbar = document.querySelector('.custom-nav')
+    navbar.classList.toggle('active')
 })
-const goNext = ()=>{
-    if(counter >1){
-        return 
-    }
-    counter++
-    slideImage()
-}
-const goPrev = ()=>{
-    if(counter == 0){
-        return 
-    }
-    counter--
-    slideImage()
-}
-const slideImage = () =>{
-    slides.forEach((slide)=>{
-        slide.style.transform = `translateX(-${counter*100}%)`
-    })
-}
+/* Navbar handler */
