@@ -439,8 +439,9 @@ gap: 0.3rem;
   line-height: 1.5rem;
 }
 .custom-grid-content{
-  display: grid;
-  grid-template-columns: repeat(3,1fr);
+  display: flex;
+  justify-content: space-between;
+  /* grid-template-columns: 65% 35%; */
 }
 .custom-signup-section{
   background-color: #F6F6F6;
@@ -451,9 +452,40 @@ gap: 0.3rem;
 .custom-signup-section .ganesh-image{
   width: 60%;
 }
+.custom-grid-content .custom-signup-logo{
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
 .custom-grid-content > div:nth-child(1){
-  grid-column-start: 1;
-  grid-column-end: 3;
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.custom-grid-content > div:nth-child(1) p{
+  font-size: 1.2rem;
+  font-weight: 600;
+    color: var(--main-text-color)
+}
+.custom-image-section{
+  width: 70%;
+}
+.custom-image-section img{
+  width: 100%;
+}
+.custom-image-section > p:nth-child(2){
+  text-align: left;
+  font-size: 5rem;
+}
+.custom-image-section > p:nth-child(3){
+  text-align: right;
+}
+.custom-grid-content > div:nth-child(1) p b{
+  font-size: 2rem;
+  font-weight: 600;
 }
 .custom-grid-content > div:nth-child(2){
   display: flex;
@@ -462,6 +494,10 @@ gap: 0.3rem;
   background-color: white;
   height: 100vh;
   box-shadow: rgba(149, 157, 165, 0.055) -8px 0px 25px;
+  min-width: 40vw;
+}
+.custom-grid-content > div:nth-child(2) .bg-vector-left, .custom-grid-content> div:nth-child(2) .bg-vector-right-top{
+  display: none;
 }
 .custom-input-content{
   /* display: flex;
@@ -470,6 +506,35 @@ gap: 0.3rem;
   grid-template-columns: repeat(1,1fr);
   gap: 0.7rem;
   margin: 1rem 0;
+  overflow-y: auto;
+  padding: 0 0.3rem;
+  position: relative;
+  z-index: 2;
+}
+.custom-input-content input{
+  border: none;
+    background: none;
+    width: 100%;
+    padding: 0.7rem 0;
+}
+.custom-input-content::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.custom-input-content::-webkit-scrollbar-track {
+  background: #17183b1f;
+  height: 8px;
+  
+}
+
+.custom-input-content::-webkit-scrollbar-thumb {
+  background: #17183B;
+  border-radius: 10px;
+}
+
+.custom-input-content::-webkit-scrollbar-thumb:hover {
+  background: #232555;
 }
 .custom-input-content > div p{
   margin-bottom: 0.5rem;
@@ -482,6 +547,7 @@ gap: 0.3rem;
   top: 0;
   right: 0;
   width: 50%;
+  display: block;
 }
 .custom-input-btn{
   width: 100%;
@@ -494,6 +560,8 @@ gap: 0.3rem;
   cursor: pointer;
   transition: all 0.5s;
   border: 2px solid transparent;
+  position: relative;
+  z-index: 2;
 }
 .custom-input-btn:hover{
   border: 2px solid #e0e0ec;
@@ -502,17 +570,27 @@ gap: 0.3rem;
   font-size: 1rem;
 }
 .custom-tabs{
-  width: 80%;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;
+  /* gap: 1rem; */
   align-items: center;
-  /* min-height: 100px; */
   background-color: #17183b13;
-  padding: 1rem;
+  padding: 0.4rem;
   position: relative;
-  z-index: 1;
-
+  z-index: 2;
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: 0.9rem;
+  margin-bottom: 0.6rem;
+}
+.custom-tabs div{
+  cursor: pointer;
+  padding: 0.7rem 1rem;
+  transition: all 0.5s;
+}
+.custom-tabs div.active{
+  background-color: white;
+  border-radius: 10px;
 }
 
 @media screen and (min-width: 710px) and (max-width: 850px){
@@ -543,6 +621,24 @@ gap: 0.3rem;
   }
 }
 @media only screen and (max-width: 710px){
+  .custom-grid-content > div:nth-child(2) .bg-vector-left, .custom-grid-content> div:nth-child(2) .bg-vector-right-top{
+    display: block;
+  }
+  .custom-grid-content > div:nth-child(2){
+    padding: 2rem 1rem;
+  }
+  .custom-input-content input{
+    padding: 1rem 0;
+  }
+  .custom-banner-design-top{
+    display: none;
+  }
+  .custom-grid-content{
+    flex-direction: column;
+  }
+  .custom-grid-content > div:nth-child(1){
+    display: none;
+  }
   .custom-contact-us{
     height: auto;
   }

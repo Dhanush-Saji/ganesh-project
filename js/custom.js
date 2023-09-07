@@ -76,4 +76,26 @@ function clickUploader(){
   let uploader = document.querySelector('#custom-upload-input')
   uploader.click()
 }
+
+function toggleUserSignup(userType) {
+  const tab = document.querySelectorAll('.custom-tabs > div')
+  tab.forEach((tabElement)=>{
+    tabElement.classList.toggle('active')
+  })
+  const elements = document.querySelectorAll('[data-participant="participant"]');
+  console.log(elements)
+
+  elements.forEach((element) => {
+    if (userType === 'voter') {
+      element.style.display = 'none'; 
+    } else {
+      element.style.display = 'flex'; 
+    }
+  });
+}
+
+// Add a click event listener to the button
+const toggleButton = document.getElementById('toggleButton');
+toggleButton.addEventListener('click', toggleDisplayFlex);
+
 /* Others */
