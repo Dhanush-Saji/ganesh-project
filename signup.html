@@ -33,13 +33,105 @@
 
             <div class="custom-signup-section">
                 <div class="custom-grid-content">
-                    <div>
+                    <div style="position: relative;">
                         <h1 class="custom-main-text" style="text-align: left;">Ganeshak</h1>
-                        <img class="ganesh-image" src="./images/svg/ganeshak-2.svg" alt="">
+                        <img style="opacity: 0.5;" class="bg-vector-right-top" src="./images/svg/bg-vector-right.svg" alt="">
+                        <img style="opacity: 0.5;" class="bg-vector-left" src="./images/svg/bg-vector-right.svg" alt="">
                     </div>
+                    <div style="position: relative;">
+                        <div class="custom-tabs">
+                            <div>
+                                User
+                            </div>
+                            <div>
+                                User
+                            </div>
+                        </div>
+                        <div style="text-align: left;">
+                            <h1 class="custom-main-text">Let's get started</h1>
+                            <p class="custom-sub-text">Create an account</p>
+                        </div>
+                    <div class="custom-input-content">
+                        <div style="display: flex;gap: 1rem;justify-content: space-between;">
+                            <div>
+                                <p>Mobile No.</p>
+                                <div style="margin-right: auto;padding: 0.2rem 1.2rem;border: 1px solid rgb(202, 202, 202);border-radius: 8px;display: flex;gap: 0.5rem;width: 100%;align-items: center;">
+                                    <label><i class="fal fa-solid fa-phone" style=""></i></label>
+                                    <input style="border: none; background: none;width: 100%;padding: 0.7rem 0;" type="text" placeholder="Enter mobile number" value=""/> 
+                                </div>
+                            </div>
+                            <div>
+                                <p>Name</p>
+                            <div style="margin-right: auto;padding: 0.2rem 1.2rem;border: 1px solid rgb(202, 202, 202);border-radius: 8px;display: flex;gap: 0.5rem;width: 100%;align-items: center;">
+                                <label><i class="fal fa-envelope"></i></label>
+                                <input style="border: none; background: none;width: 100%;padding: 0.7rem 0;" type="text" placeholder="Enter name" value=""/> 
+                            </div>
+                            </div>
+                        </div>
+                        <div>
+                            <p>Category</p>
+                            <select style="border: none; background: none;width: 100%;padding: 0.7rem 0.5rem;border: 1px solid rgb(202, 202, 202);border-radius: 8px;" placeholder="Enter category" value="">
+                                <option value="">Mandal</option>
+                                <option value="">Household</option>
+                                <option value="">Society</option>
+                            </select>
+                        </div>
+                        <div style="display: flex;gap: 1rem;justify-content: space-between;">
+                        <div>
+                            <p>City</p>
+                        <div style="margin-right: auto;padding: 0.2rem 1.2rem;border: 1px solid rgb(202, 202, 202);border-radius: 8px;display: flex;gap: 0.5rem;width: 100%;align-items: center;">
+                            <label><i class="fal fa-envelope"></i></label>
+                            <input style="border: none; background: none;width: 100%;padding: 0.7rem 0;" type="text" placeholder="Enter city" value=""/> 
+                        </div>
+                        </div>
+                        <div>
+                            <p>Locality</p>
+                        <div style="margin-right: auto;padding: 0.2rem 1.2rem;border: 1px solid rgb(202, 202, 202);border-radius: 8px;display: flex;gap: 0.5rem;width: 100%;align-items: center;">
+                            <label><i class="fal fa-envelope"></i></label>
+                            <input style="border: none; background: none;width: 100%;padding: 0.7rem 0;" type="text" placeholder="Enter locality" value=""/> 
+                        </div>
+                        </div>
+                    </div>
+                    <div style="display: flex;gap: 1rem;justify-content: space-between;">
+                        <div>
+                            <p>Pincode</p>
+                        <div style="margin-right: auto;padding: 0.2rem 1.2rem;border: 1px solid rgb(202, 202, 202);border-radius: 8px;display: flex;gap: 0.5rem;width: 100%;align-items: center;">
+                            <label><i class="fal fa-envelope"></i></label>
+                            <input style="border: none; background: none;width: 100%;padding: 0.7rem 0;" type="number" placeholder="Enter pincode" value=""/> 
+                        </div>
+                        </div>
+                        <div>
+                            <p>Password</p>
+                        <div style="margin-right: auto;padding: 0.2rem 1.2rem;border: 1px solid rgb(202, 202, 202);border-radius: 8px;display: flex;gap: 0.5rem;width: 100%;align-items: center;">
+                            <label><i class="fal fa-lock"></i></label>
+                            <input style="border: none; background: none;width: 100%;padding: 0.7rem 0;" type="password" placeholder="Enter password" value=""/> 
+                        </div>
+                        </div>
+                        </div>
+                        
+                        <div>
+                            <p>Description</p>
+                            <textarea  style="border: none; background: none;width: 100%;padding: 0.7rem 0.5rem;border: 1px solid rgb(202, 202, 202);border-radius: 8px;" placeholder="Write description" name="" id="" cols="30" rows="10"></textarea>
+                        </div>
+                        <div style="position: relative;width: 100%;">
+                            <img id="preview">
+                            <div style="background-color: #17183B;position: absolute;top: 10px;right: 10px;color: white;width: 15px;height: 15px;display: none;cursor: pointer;" onclick="removeImage()" id="imageClearBtn">x</div>
+                        </div>
+                        <div>
+                            <div style="border: 1px solid #17183B;width: 100%;background-color: #17183b09;color: #17183B;padding: 0.5rem 0;border-radius: 8px;cursor: pointer;border-style: dashed solid;font-size: 0.9rem;font-weight: 500;" onclick="clickUploader()">
+                                upload Image
+                            </div>
+                            <input style="display: none;" id="custom-upload-input" type="file" accept="image/*" onchange="previewImage(event)">
+                        </div>
+                        </div>
+                        <button class="custom-input-btn">
+                           Sign up
+                        </button>
+                        <p>Already have an account?<span style="color:#CA006B;font-weight: 600;margin-left: 0.5rem;cursor: pointer;">Login</span></p>
+                    <img src="./images/banner-design-right-top.png" class="custom-banner-design-top" alt="">
                 </div>
-                <img class="bg-vector-right-top" src="./images/svg/bg-vector-right.svg" alt="">
-                <img class="bg-vector-left" src="./images/svg/bg-vector-right.svg" alt="">
+                </div>
+                
             </div>
         </div>
     </div>

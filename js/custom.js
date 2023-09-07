@@ -48,3 +48,32 @@ hamburger.addEventListener('click',()=>{
     navbar.classList.toggle('active')
 })
 /* Navbar handler */
+
+/* Image upload viewer */
+function previewImage(event) {
+  var input = event.target;
+  var image = document.getElementById('preview');
+  if (input.files && input.files[0]) {
+     var reader = new FileReader();
+     reader.onload = function(e) {
+        image.src = e.target.result;
+     }
+     reader.readAsDataURL(input.files[0]);
+  }
+  const closeBtn = document.querySelector('#imageClearBtn')
+  closeBtn.style.display = 'block'
+}
+function removeImage() {
+  var image = document.getElementById('preview');
+  image.src = ""; // Clears the src attribute to remove the image
+  const closeBtn = document.querySelector('#imageClearBtn')
+  closeBtn.style.display = 'none'
+}
+/* Image upload viewer */
+
+/* Others */
+function clickUploader(){
+  let uploader = document.querySelector('#custom-upload-input')
+  uploader.click()
+}
+/* Others */
