@@ -103,11 +103,13 @@ display: none !important;
       padding: 0.5rem 1rem;
       align-items: center;
       gap: 0.5rem;
+      width: 70%;
 }
 .hero-search-div input{
     background: none;
     border: none;
     min-height: 15px;
+    width: 100%;
 }
 .hero-search-div input::placeholder{
     color: rgba(0, 0, 0, 0.555);
@@ -123,6 +125,11 @@ display: none !important;
     border-radius: 10px;
     background-color: #1daeff;
     color: white;
+    margin-left: auto;
+    gap: 0.5rem;
+}
+.hero-search-div button p{
+  display: none;
 }
 .custom-hero-input-div{
     text-align: left;
@@ -224,7 +231,10 @@ display: none !important;
 .custom-adv-div{
     display: flex;
     gap: 1rem;
+    margin: auto;
     margin-top: 0.8rem;
+    width: 90%;
+    overflow: hidden;
 }
 .custom-adv-div img{
     width: 50%;
@@ -670,6 +680,9 @@ gap: 0.3rem;
     }
     .hero-search-div button{
         width: 100%;
+    }
+    .hero-search-div button p{
+        display: block;
     }
     .custom-slider-wrapper{
         border-radius: 0;
