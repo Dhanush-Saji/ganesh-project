@@ -98,4 +98,5 @@ function toggleUserSignup(userType) {
 const toggleButton = document.getElementById('toggleButton');
 toggleButton.addEventListener('click', toggleDisplayFlex);
 
+
 /* Others */
