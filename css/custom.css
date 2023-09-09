@@ -239,6 +239,9 @@ display: none !important;
 .custom-adv-div img{
     width: 50%;
 }
+.adv3{
+  display: none;
+}
 .custom-recent-listing{
     width: 100vw;
   /* height: 100vh; */
@@ -247,6 +250,9 @@ display: none !important;
   display: flex;
   flex-direction: column;
   padding-top: 1rem;
+}
+.adv2{
+  display: block;
 }
 .custom-main-heading{
     display: flex;
@@ -749,6 +755,12 @@ gap: 0.3rem;
   }
 }
 @media only screen and (max-width: 710px){
+  .adv3{
+    display: flex;
+  }
+  .adv2{
+    display: none;
+  }
   .custom-single-list-details{
     grid-template-columns: repeat(1,1fr);
   }
