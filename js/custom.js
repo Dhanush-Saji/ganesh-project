@@ -38,7 +38,7 @@ function slideImageFn() {
     }
   }, 3000);
 }
-slideImageFn()
+// slideImageFn()
 /* Hero slider */
 
 /* Navbar handler */
