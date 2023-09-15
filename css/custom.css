@@ -94,20 +94,14 @@ display: flex;
 }
 .hero-search-div {
   display: flex;
-  background-image: url("../images/svg/blur-effect.svg");
-  backdrop-filter: blur(7px);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-      border-radius: 18px;
-      position: absolute;
-      bottom: 10%;
-      left: 50%;
-      transform: translate(-50%,-50%);
+  background-color: #0000002c;
+  border-radius: 12px;
       padding: 0.5rem 1rem;
       align-items: center;
       gap: 0.5rem;
-      width: 70%;
+      width: 80%;
+      margin: auto;
+      margin-top: 1rem;
 }
 .hero-search-div input{
     background: none;
@@ -162,8 +156,8 @@ display: flex;
 }
 .custom-hero-section {
   width: 100vw;
-  height: 100vh;
-  padding-top: 4rem;
+  /* height: 100vh;
+  padding-top: 3rem; */
   background-color: var(--bg-color);
   position: relative;
 }
@@ -918,6 +912,12 @@ gap: 0.3rem;
   .custom-logo{
     display: none;
   }
+  .custom-slider1{
+    display: none;
+  }
+  .custom-slider2{
+    display: flex;
+  }
 }
 @media only screen and (max-width: 510px){
   .custom-header{
@@ -936,11 +936,6 @@ gap: 0.3rem;
   .signin-btn{
     width: 100%;
   }
-  .custom-slider1{
-    display: none;
-  }
-  .custom-slider2{
-    display: flex;
-  }
+  
 }
 
