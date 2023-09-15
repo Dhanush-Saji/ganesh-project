@@ -10,13 +10,13 @@ display: none !important;
 }
 .custom-logo{
   display: flex;
-  flex-direction: column;
-  align-items: end;
+  align-items: center;
+  gap: 0.5rem;
 }
 .custom-logo > img:nth-child(1){
-  width: 120px;
+  width: 50px;
 }
-.custom-logo > img:nth-child(2){
+.custom-logo > div > img{
   width: 80px;
 }
 .listing-filters  a.gallery-filter-active{
@@ -37,9 +37,13 @@ display: none !important;
   display: none;
   font-size: 1.2rem;
 }
+.custom-nav{
+display: flex;
+}
 .custom-nav ul{
   display: flex;
   list-style: none;
+  margin: auto;
 }
 .custom-nav ul li a{
   display: block;
