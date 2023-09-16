@@ -42,11 +42,11 @@ function slideImageFn() {
 /* Hero slider */
 
 /* Navbar handler */
-let hamburger = document.querySelector('.custom-hamburger')
-hamburger.addEventListener('click',()=>{
-    let navbar = document.querySelector('.custom-nav')
-    navbar.classList.toggle('active')
-})
+// let hamburger = document.querySelector('.custom-hamburger')
+// hamburger.addEventListener('click',()=>{
+//     let navbar = document.querySelector('.custom-nav')
+//     navbar.classList.toggle('active')
+// })
 /* Navbar handler */
 
 /* Image upload viewer */
@@ -99,4 +99,7 @@ const toggleButton = document.getElementById('toggleButton');
 toggleButton.addEventListener('click', toggleDisplayFlex);
 
 
+window.addEventListener('scroll',function(){
+  console.log('hi')
+})
 /* Others */

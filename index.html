@@ -91,7 +91,7 @@
                         <div class="custom-hero-section-element">
                         <div class="custom-slider-wrapper">
                             <!-- <img style="width: 100%;" src="./images/ganesh-image-1.jpg" alt=""> -->
-                                <img class="custom-slider1" id="custom-slide1" src="./images/ganesh-image-1.jpg" alt="" />
+                                <img class="custom-slider1" id="custom-slide1" src="https://trendsonam.com/images/banner-v2.jpg" alt="" />
                                 <img class="custom-slider2" id="custom-slide1" src="./images/ganesh-2.jpg" alt="" />
                                 <!-- <img class="custom-slider" id="custom-slide2" src="./images/bg/hero/2.jpg" alt="" />
                                 <img class="custom-slider" id="custom-slide3" src="./images/bg/hero/1.jpg" alt="" />
@@ -332,6 +332,83 @@
                     </div>
                     <!--section end-->
                     <!--section  -->
+                    <div class="custom-prize-div">
+                        <div class="custom-main-heading">
+                            <p class="custom-sub-text">DISCOVER</p>
+                            <h1 class="custom-main-text">Contest Prizes</h1>
+                            <div style="width: 9%;height: 2px;background-color: var(--yellow-color);"></div>
+                            </div>
+                            <div class="contest-prize-grid">
+                                <div class="single-contest-prize">
+                                    <div class="single-contest-heading">
+                                        PANDAL
+                                    </div>
+                                    <div class="single-contest-prize-data">
+                                        <div class="prize-main-text">
+                                            <h1>1<span class="prize-sub-text">st</span></h1>
+                                            <span>1,00,000</span>
+                                        </div>
+                                        <div class="prize-main-text">
+                                            <h1>2<span class="prize-sub-text">nd</span></h1>
+                                            <span>1,00,000</span>
+                                        </div>
+                                        <div class="prize-main-text">
+                                            <h1>3<span class="prize-sub-text">rd</span></h1>
+                                            <span>1,00,000</span>
+                                        </div>
+                                        <img class="sun-image-right" src="/images/sun.png" alt="">
+                                        <img class="sun-image-left" src="/images/sun.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="single-contest-prize">
+                                    <div class="single-contest-heading">
+                                        SOCITIES
+                                    </div>
+                                    <div class="single-contest-prize-data">
+                                        <div class="prize-main-text">
+                                            <h1>1<span class="prize-sub-text">st</span></h1>
+                                            <span>1,00,000</span>
+                                        </div>
+                                        <div class="prize-main-text">
+                                            <h1>2<span class="prize-sub-text">nd</span></h1>
+                                            <span>1,00,000</span>
+                                        </div>
+                                        <div class="prize-main-text">
+                                            <h1>3<span class="prize-sub-text">rd</span></h1>
+                                            <span>1,00,000</span>
+                                        </div>
+                                        <img class="sun-image-right" src="/images/sun.png" alt="">
+                                        <img class="sun-image-left" src="/images/sun.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="single-contest-prize">
+                                    <div class="single-contest-heading">
+                                        HOUSEHOLD
+                                    </div>
+                                    <div class="single-contest-prize-data">
+                                        <div class="prize-main-text">
+                                            <h1>1<span class="prize-sub-text">st</span></h1>
+                                            <span>1,00,000</span>
+                                        </div>
+                                        <div class="prize-main-text">
+                                            <h1>2<span class="prize-sub-text">nd</span></h1>
+                                            <span>1,00,000</span>
+                                        </div>
+                                        <div class="prize-main-text">
+                                            <h1>3<span class="prize-sub-text">rd</span></h1>
+                                            <span>1,00,000</span>
+                                        </div>
+                                        <img class="sun-image-right" src="/images/sun.png" alt="">
+                                        <img class="sun-image-left" src="/images/sun.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                    <img class="bg-vector-left" src="./images/svg/bg-vector-right.svg" alt="">
+                    <img class="bg-vector-right" src="./images/svg/bg-vector-right.svg" alt="">
+                    </div>
+                    <!--section end-->
+                    <!--section  -->
                     <div class="custom-about-us">
                         <div class="custom-main-heading">
                             <p class="custom-sub-text">CONNECT</p>
@@ -510,6 +587,19 @@
         <script src="js/plugins.js"></script>
         <script src="js/scripts.js"></script>
         <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDwJSRi0zFjDemECmFl9JtRj1FY7TiTRRo&amp;libraries=places&amp;callback=initAutocomplete"></script>
-        <script src="js/map-single.js"></script>                          
+        <script src="js/map-single.js"></script>
+        <script>
+            const header = document.querySelector('.custom-header');
+
+                window.addEventListener('scroll', function() {
+                    if (window.scrollY > 200) {
+                        console.log('hi')
+                        header.style.position = 'fixed';
+                        header.style.top = '0';
+                    } else {
+                        header.style.position = 'static';
+                    }
+                });
+        </script>                          
     </body>
 </html>
