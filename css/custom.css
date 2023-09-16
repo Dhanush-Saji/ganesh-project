@@ -55,7 +55,7 @@ display: flex;
   font-weight: 600;
   font-size: 0.8rem;
 }
-/* .custom-nav ul li a.active{
+/* .custom-nav ul li a.active{header-rightheader-right-div
   color: #17183B;
   background-color: white;
 
@@ -64,10 +64,19 @@ display: flex;
   color: #17183B;
   background-color: white;
 }
+.header-right-div{
+  display: flex;
+  width: auto;
+  gap: 10px;
+}
 .header-right {
   display: flex;
   align-items: center;
   gap: 1rem;
+  min-width: 1rem;
+}
+.header-right button {
+  font-size: 0.7rem;
 }
 .wishlist-div {
   position: relative;
@@ -918,24 +927,40 @@ gap: 0.3rem;
   .custom-slider2{
     display: flex;
   }
-}
-@media only screen and (max-width: 510px){
   .custom-header{
     display: flex;
     flex-direction: column;
   }
+  .header-right-div{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 100%;
+    gap: 10px;
+    justify-content: space-between;
+  }
+  .header-right button{
+    font-size: 0.7rem;
+  }
+  .signin-btn{
+    width: 100%;
+  }
+  .header-right > a{
+    width: 100%;
+    font-size: 1rem;
+  }
+  .header-right  button{
+    padding: 12px;
+  }
+}
+@media only screen and (max-width: 510px){
+
   .custom-header{
     padding: 0.8rem;
   }
   .custom-nav ul li a{
     padding: 10px;
   }
-  .header-right > a{
-    width: 100%;
-  }
-  .signin-btn{
-    width: 100%;
-  }
+
   
 }
 
