@@ -743,7 +743,7 @@ gap: 0.3rem;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 1rem;
+  gap: 2rem;
   margin-top: 3rem;
 }
 .single-contest-prize{
@@ -759,7 +759,7 @@ gap: 0.3rem;
   bottom: 0;
   right: 0;
   transform: translate(50%,50%);
-  opacity: 0.3;
+  opacity: 0.4;
 }
 .single-contest-prize .sun-image-left{
   width: 40%;
@@ -767,7 +767,7 @@ gap: 0.3rem;
   top: 0;
   left: 0;
   transform: translate(-50%,-50%);
-  opacity: 0.3;
+  opacity: 0.4;
 }
 .single-contest-heading{
   font-size: 1.2rem;
@@ -779,6 +779,7 @@ gap: 0.3rem;
 }
 .custom-prize-div{
   min-height: 80vh;
+  position: relative;
 }
 .contest-prize-grid > div{
   min-width: 15rem;
